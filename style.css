@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+.meaning{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.401);
+    display: none;
+    z-index: 99;
+}
+
+.box{
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    position: absolute;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px gray;
+    position: relative;
+}
+
+.head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head i{
+    font-size: 25px;
+    margin-right:10px;
+    cursor: pointer;
+  
+}
+
+#cancel2{
+    margin-bottom: 10px;
+}
+
+.box .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    overflow-y: auto;
+
+}
+
+.box .save{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.box .save button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(40, 169, 192);
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box h4{
+    margin: 15px 0px;
+    color: rgb(90, 89, 89);
+}
+
+.box .content::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.804);
+}
+
+.navbar{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.logo h3{
+    font-family: 'Terano';
+}
+
+.saved-voc button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: rgb(40, 169, 192);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contain{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.contain form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain input{
+    width: 400px;
+    height: 38px;
+    border-radius: 12px;
+    padding: 10px;
+    border: 0.5px solid gray;
+    outline: none;
+    margin: 15px 0px;
+}
+
+.contain button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(77, 76, 76);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.contain button:hover{
+    scale:1.2;
+    cursor: pointer;
+}
+
+.myvoc{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.401);
+    z-index: 999;
+    display: none;
+}
+.local{
+    width: 50%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.section h4{
+    color: #333;
+}
+.section p{
+    margin-left: 10px;
+}
